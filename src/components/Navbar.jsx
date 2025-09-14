@@ -1,13 +1,17 @@
 import { Link } from 'react-router-dom'
+import NavbarCss from '../styles/Navbar.css'
 
 function Navbar() {
 	return (
-		<nav className='bg-gray-800 text-white p-4'>
-			<div className='container mx-auto flex justify-between'>
-				<h1 className='text-xl font-bold'>Sylwester Szwarczyński</h1>
-				<ul className='flex space-x-4'>
+		<nav >
+			<div className='navbar-container'>
+				<h1>Sylwester Szwarczyński</h1>
+				<ul >
 					<li>
 						<Link to='/about'>O mnie</Link>
+					</li>
+					<li>
+						<Link to='/skills'>Umiejętności</Link>
 					</li>
 					<li>
 						<Link to='/projects'>Projekty</Link>

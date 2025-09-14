@@ -11,8 +11,7 @@ function App() {
 	return (
 		<Router>
 			<div className='App'>
-				<Navbar />git rm -r --cached node_modules
-
+				<Navbar />
 				<Routes>
 					{/* <Route path='/' element={<Hero />} />
 					<Route path='/about' element={<About />} /> */}
