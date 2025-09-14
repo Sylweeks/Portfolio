@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import NavbarCss from '../styles/Navbar.css'
+import NavbarCss from '../styles/Navbar.module.css'
 
 function Navbar() {
 	return (
-		<nav >
-			<div className='navbar-container'>
+		<nav>
+			<div className={NavbarCss.navbarContainer}>
 				<h1>Sylwester Szwarczyński</h1>
-				<ul >
+				<ul>
 					<li>
 						<Link to='/about'>O mnie</Link>
 					</li>
