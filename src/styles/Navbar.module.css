@@ -1,17 +1,21 @@
 nav {
-	background-color: #1a202c;
+	background-color: #1a252f;
 	color: #ffffff;
 	font-family: 'Poppins';
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
 }
 
 .navbarContainer {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
 	max-width: 1400px;
-	padding: 10px 30px;
+	padding: 20px 50px;
 }
 
 h1 {
@@ -19,13 +23,105 @@ h1 {
 	margin-bottom: 0;
 }
 
-ul {
+.navLinks {
 	display: flex;
-	gap: 1.5rem;
-	text-decoration: none;
 	list-style: none;
+	align-items: center;
+}
+
+.navLinks li {
+	margin-left: 25px;
 }
 
 a {
-	color: #ffffff;
+	color: #d3d8de;
+	display: inline-block;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	white-space: nowrap;
+}
+
+.CVButton a {
+	padding: 10px 25px;
+	background-color: #2c8e5a;
+	color: #fff;
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.CVButton a:hover {
+	background-color: #2c3e50;
+	transform: translateY(-2px);
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: #eaeaea;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+/* Responsywność */
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 24px;
+	}
+	.navLinks {
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		flex-direction: column;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		background-color: #1a202c;
+		padding: 20px;
+		box-shadow: 0 2px 5px #38a169;
+	}
+
+	.navLinks.active {
+		display: flex;
+		animation: slideDown 0.3s ease forwards;
+	}
+
+	.navLinks li {
+		margin: 15px 0;
+	}
+
+	.CVButton {
+		margin-top: 20px;
+	}
+	.burger {
+		display: block;
+	}
+
+	/* Animacja burgera */
+	.toggle .line1 {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+	.toggle .line2 {
+		opacity: 0;
+	}
+	.toggle .line3 {
+		transform: rotate(45deg) translate(-5px, -6px);
+	}
+}
+@keyframes slideDown {
+	from {
+		max-height: 0;
+		opacity: 0;
+	}
+	to {
+		max-height: 500px;
+		opacity: 1;
+	}
 }
