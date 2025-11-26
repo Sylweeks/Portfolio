@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import NavbarCss from '../styles/Navbar.module.css'
 import { useState } from 'react'
 
@@ -11,31 +10,33 @@ function Navbar() {
 	return (
 		<nav className={NavbarCss.navbar}>
 			<div className={NavbarCss.navbarContainer}>
-				<h1>Sylwester Szwarczyński</h1>
+				<a href='top'>
+					<h1>Sylwester Szwarczyński</h1>
+				</a>
 				<ul className={`${NavbarCss.navLinks} ${isOpen ? NavbarCss.active : ''}`}>
 					<li>
-						<Link to='/about' onClick={toggleMenu}>
-							About me
-						</Link>
+						<a href='#about' onClick={toggleMenu}>
+							O mnie
+						</a>
 					</li>
 					<li>
-						<Link to='/skills' onClick={toggleMenu}>
-							Skills
-						</Link>
+						<a href='#skills' onClick={toggleMenu}>
+							Umiejętności
+						</a>
 					</li>
 					<li>
-						<Link to='/projects' onClick={toggleMenu}>
-							Projects
-						</Link>
+						<a href='#projects' onClick={toggleMenu}>
+							Projekty
+						</a>
 					</li>
 					<li>
-						<Link to='/contact' onClick={toggleMenu}>
-							Contact
-						</Link>
+						<a href='#contact' onClick={toggleMenu}>
+							Kontakt
+						</a>
 					</li>
 					<li className={NavbarCss.CVButton}>
 						<a href='git-sheet.pdf' download onClick={toggleMenu}>
-							Download CV
+							Pobierz CV
 						</a>
 					</li>
 				</ul>

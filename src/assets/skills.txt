@@ -1,0 +1,108 @@
+🧠 Podstawy web developmentu
+
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+SQL
+
+DOM
+
+JSON
+
+Responsywność (RWD)
+
+SEO podstawy
+
+⚛️ React
+
+JSX
+
+Komponenty
+
+Props
+
+State (useState)
+
+Renderowanie warunkowe
+
+Renderowanie list
+
+Klucze (key)
+
+Formularze w React
+
+useEffect
+
+useMemo, useCallback, memo
+
+Zarządzanie stanem globalnym (np. Context API, Redux)
+
+React Router
+
+Lifting state up
+
+Komunikacja komponentów
+
+Hooki niestandardowe (custom hooks)
+
+🎨 Stylowanie
+
+CSS Modules
+
+Sass / SCSS
+
+Styled Components
+
+Bootstrap
+
+Animacje CSS
+
+🧩 Narzędzia developerskie
+
+Git
+
+GitHub 
+
+VS Code
+
+npm / yarn
+
+Node.js
+
+ESLint / Prettier
+
+Browser DevTools
+
+🌐 API i komunikacja
+
+Fetch API
+
+REST API
+
+Obsługa błędów i loadingu
+
+🧪 Testowanie
+
+?
+
+⚙️ Build & Deploy
+
+Webpack / Vite
+
+Netlify / Vercel / GitHub Pages
+
+🧭 Dodatkowe (mile widziane)
+
+Redux Toolkit / Zustand / Recoil
+
+Next.js
+
+Zasady UX/UI
+
+Jira
+
+Trello
+

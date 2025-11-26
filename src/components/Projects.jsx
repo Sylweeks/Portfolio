@@ -1,26 +1,46 @@
-function Projects() {
-	const projects = [
-		{ title: 'Projekt 1', img: '/assets/images/project1.png', demo: 'link', github: 'link' },
-		// Dodaj kolejne
-	]
+import ProjectCard from './ProjectCard'
+import ss1 from '../assets/ss1.jpg'
+import ss2 from '../assets/ss2.png'
+import ss3 from '../assets/ss3.png'
+import ss4 from '../assets/ss4.png'
+import ProjectsCss from '../styles/Projects.module.css'
 
+function Projects() {
 	return (
-		<section className='py-10'>
-			<h2 className='text-3xl text-center'>Projekty</h2>
-			<div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-6'>
-				{projects.map((project, index) => (
-					<div key={index} className='border p-4'>
-						<img src={project.img} alt={project.title} className='w-full h-48 object-cover' />
-						<h3 className='text-xl mt-2'>{project.title}</h3>
-						<a href={project.demo} className='text-blue-500'>
-							Demo
-						</a>{' '}
-						|
-						<a href={project.github} className='text-blue-500'>
-							GitHub
-						</a>
-					</div>
-				))}
+		<section className={ProjectsCss.projects} id='projects'>
+			<div className='container'>
+				<h1>Projekty</h1>
+				<div className={ProjectsCss.projectCards}>
+					<ProjectCard
+						title='Biuro podróży'
+						tech={['HTML', 'CSS', 'JS']}
+						description='Strona wizytówka firmy oferującej wycieczki po świecie'
+						screenshot={ss1}></ProjectCard>
+
+					<ProjectCard
+						title='Biuro podróży'
+						tech={['HTML', 'CSS', 'JS']}
+						description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. '
+						screenshot={ss2}></ProjectCard>
+
+					<ProjectCard
+						title='Biuro podróży'
+						tech={['HTML', 'CSS', 'JS']}
+						description='Strona wizytówka firmy oferującej wycieczki po świecie'
+						screenshot={ss3}></ProjectCard>
+
+					<ProjectCard
+						title='Biuro podróży'
+						tech={['HTML', 'CSS', 'JS']}
+						description='Strona wizytówka firmy oferującej wycieczki po świecie'
+						screenshot={ss4}></ProjectCard>
+
+					<ProjectCard
+						title='Biuro podróży'
+						tech={['HTML', 'CSS', 'JS']}
+						description='Strona wizytówka firmy oferującej wycieczki po świecie'
+						screenshot={ss1}></ProjectCard>
+				</div>
 			</div>
 		</section>
 	)

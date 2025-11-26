@@ -1,0 +1,150 @@
+// 📁 skillsData.js
+
+import { FaReact, FaNpm } from 'react-icons/fa'
+import { VscVscode } from 'react-icons/vsc'
+import {
+	SiRedux,
+	SiNextdotjs,
+	SiVercel,
+	SiWebpack,
+	SiJira,
+	SiTrello,
+	SiStyledcomponents,
+	SiSass,
+	SiBootstrap,
+	SiJavascript,
+	SiHtml5,
+	SiCss3,
+	SiGit,
+	SiGithub,
+	SiNodedotjs,
+	SiEslint,
+	//SiPrettier,
+	SiVite,
+	//SiNetlify,
+	//SiJirasoftware,
+	SiJson,
+	//SiReduxsaga,
+	SiTestinglibrary,
+	SiCypress,
+
+	// SiVisualstudiocode,
+	//SiZustand,
+	//SiRecoil,
+} from 'react-icons/si'
+
+const reactIconColor = '#61DAFB'
+
+export const skillsData = [
+	{
+		id: 'react',
+		label: 'React',
+		icon: FaReact,
+		color: reactIconColor,
+		items: [
+			{ listItem: 'JSX', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Komponenty', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Props', icon: FaReact, color: reactIconColor },
+			{ listItem: 'State (useState)', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Renderowanie warunkowe', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Renderowanie list', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Klucze (key)', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Formularze w React', icon: FaReact, color: reactIconColor },
+			{ listItem: 'useEffect', icon: FaReact, color: reactIconColor },
+			{ listItem: 'useMemo, useCallback, memo', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Zarządzanie stanem globalnym (Context API, Redux)', icon: FaReact, color: reactIconColor },
+			{ listItem: 'React Router', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Lifting state up', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Komunikacja komponentów', icon: FaReact, color: reactIconColor },
+			{ listItem: 'Hooki niestandardowe (custom hooks)', icon: FaReact, color: reactIconColor },
+		],
+	},
+	{
+		id: 'web',
+		label: 'Podstawy web developmentu',
+		icon: SiHtml5,
+		color: '#e5532d',
+		items: [
+			{ listItem: 'HTML5', icon: SiHtml5, color: '#e5532d' },
+			{ listItem: 'CSS3', icon: SiCss3, color: '#0874bc' },
+			{ listItem: 'JavaScript (ES6+)', icon: SiJavascript, color: '#ffcc44' },
+			{ listItem: 'SQL', icon: SiJson, color: '#0b8820ff' },
+			{ listItem: 'DOM', icon: SiJavascript, color: '#ffcc44' },
+			{ listItem: 'JSON', icon: SiJson, color: '#0b8820ff' },
+			{ listItem: 'Responsywność (RWD)', icon: SiCss3, color: '#0874bc' },
+			{ listItem: 'SEO podstawy', icon: SiHtml5, color: '#e5532d' },
+		],
+	},
+	{
+		id: 'style',
+		label: 'Stylowanie',
+		icon: SiCss3,
+		color: '#0874bc',
+		items: [
+			{ listItem: 'CSS Modules', icon: SiCss3, color: '#0874bc' },
+			{ listItem: 'Sass / SCSS', icon: SiSass, color: '#b44266ff' },
+			{ listItem: 'Styled Components', icon: SiStyledcomponents, color: '#cde01dff' },
+			{ listItem: 'Bootstrap', icon: SiBootstrap, color: '#7d30c6ff' },
+			{ listItem: 'Animacje CSS', icon: SiCss3, color: '#0874bc' },
+		],
+	},
+	{
+		id: 'tools',
+		label: 'Narzędzia developerskie',
+		icon: SiGit,
+
+		items: [
+			{ listItem: 'Git', icon: SiGit, color: '#ffffffff' },
+			{ listItem: 'GitHub', icon: SiGithub, color: '#f2f2f2ff' },
+			{ listItem: 'VS Code', icon: VscVscode, color: '#0874bc' },
+			{ listItem: 'npm / yarn', icon: FaNpm, color: '#c01e1eff' },
+			{ listItem: 'Node.js', icon: SiNodedotjs, color: '#08bc41ff' },
+			{ listItem: 'ESLint / Prettier', icon: SiEslint, color: '#0874bc' },
+			{ listItem: 'Browser DevTools', icon: SiJavascript, color: '#ccd42eff' },
+		],
+	},
+	{
+		id: 'api',
+		label: 'API i komunikacja',
+		icon: SiJson,
+		color: '#2c8e5a',
+		items: [
+			{ listItem: 'Fetch API', icon: SiJavascript, color: '#ccd42eff ' },
+			{ listItem: 'REST API', icon: SiJson },
+			{ listItem: 'Obsługa błędów i loadingu', icon: SiJavascript, color: '#ccd42eff ' },
+		],
+	},
+	{
+		id: 'test',
+		label: 'Testowanie',
+		icon: SiTestinglibrary,
+		color: '#bb2f2fff',
+		items: [
+			{ listItem: 'React Testing Library', icon: SiTestinglibrary, color: '#bb2f2fff' },
+			{ listItem: 'Cypress', icon: SiCypress, color: '#51ecb0ff' },
+			{ listItem: 'Unit testing (Jest)', icon: SiTestinglibrary, color: '#bb2f2fff' },
+		],
+	},
+	{
+		id: 'build',
+		label: 'Build & Deploy',
+		icon: SiWebpack,
+		color: '#13aad8ff',
+		items: [
+			{ listItem: 'Webpack / Vite', icon: SiVite, color: '#761edbff' },
+			{ listItem: 'Netlify / Vercel / GitHub Pages', icon: SiVercel, color: '#efefefff' },
+		],
+	},
+	{
+		id: 'extra',
+		label: 'Dodatkowe',
+		icon: SiNextdotjs,
+		items: [
+			{ listItem: 'Redux Toolkit / Zustand / Recoil', icon: SiRedux, color: '#660cc5ff' },
+			{ listItem: 'Next.js', icon: SiNextdotjs, color: '#0b8820ff' },
+			{ listItem: 'Zasady UX/UI', icon: SiHtml5, color: '#b03025ff' },
+			{ listItem: 'Jira', icon: SiJira, color: '#0b85b5ff' },
+			{ listItem: 'Trello', icon: SiTrello, color: '#0079c9ff' },
+		],
+	},
+]

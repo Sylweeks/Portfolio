@@ -1,0 +1,41 @@
+.footer {
+	padding: 2rem 1rem;
+	text-align: center;
+	color: #ffffff;
+	background-color: #0f0f0f;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	font-family: 'Poppins';
+}
+
+.footerCopy {
+	font-size: 1.2rem;
+	opacity: 0.8;
+	margin-bottom: 1rem;
+	font-weight: 800;
+}
+
+.footerBack {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-size: 0.95rem;
+	text-decoration: none;
+	font-family: 'Poppins';
+	color: #a78bfa; /* delikatny fiolet pasujący do Twojej palety */
+	font-weight: 500;
+	transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.footerBack:hover {
+	transform: translateY(-2px);
+	opacity: 0.9;
+}
+
+.arrow {
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+
+.footerBack:hover .arrow {
+	transform: translateY(-2px);
+}

@@ -1,0 +1,138 @@
+.aboutMe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 2.5rem 2rem;
+	margin: 0px auto;
+	font-family: 'Poppins';
+	background-color: #c1c1c1;
+}
+
+.aboutMe .container {
+	max-width: 1400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 0;
+}
+
+.aboutMe h1 {
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #5a4ee4;
+	text-shadow: 1px 1px 1px black;
+	border-bottom: 4px solid #4f43d1; /* linia pod tekstem */
+	padding-bottom: 4px; /* odstęp między tekstem a linią */
+	display: inline-block; /* żeby linia była tylko pod tekstem, a nie całą szerokość */
+}
+
+.aboutMeContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	gap: 1.5rem;
+}
+.aboutMeContent p {
+	font-size: 1rem;
+	line-height: 1.3;
+	color: #111111;
+	text-align: justify;
+}
+
+.aboutMeContent h3 {
+	font-size: 22px;
+	margin: 10px 0px;
+	color: #2c2c2c;
+}
+
+.aboutMeText {
+	width: 65%;
+}
+
+.aboutMe ul {
+	padding: 15px 30px;
+	color: #111111;
+}
+
+.aboutMeImg {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 250px;
+	justify-content: space-around;
+	align-items: center;
+	gap: 30px;
+}
+
+.aboutMeImg img {
+	height: 280px;
+	width: 280px;
+	object-fit: cover;
+	border: 1px solid black;
+	border-radius: 50%;
+	box-shadow: 0 0 8px #6254ffea;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutMeImg img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 30px #4f43d1;
+}
+
+/* kontener na ikony */
+.aboutMe .aboutMeIcons {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 10px;
+}
+.aboutMeImg svg {
+	font-size: 3rem;
+	color: #4f43d1;
+	cursor: pointer;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.aboutMeImg svg:hover {
+	color: #20824e;
+	transform: scale(1.2);
+}
+
+/* responsywność */
+@media (max-width: 950px) {
+	.aboutMe .aboutMeImg {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.aboutMe {
+		padding: 3rem 1rem;
+	}
+
+	.aboutMe h1 {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.aboutMeContent {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	.aboutMeContent p {
+		text-align: justify;
+	}
+	.aboutMeContent ul {
+		text-align: left;
+	}
+	.aboutMeText {
+		width: 90%;
+	}
+}
