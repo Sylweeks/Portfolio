@@ -3,7 +3,7 @@ nav {
 	color: #ffffff;
 	font-family: 'Poppins';
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	position: fixed;
+	position: sticky;
 	width: 100%;
 	top: 0;
 	z-index: 1000;
@@ -15,23 +15,30 @@ nav {
 	align-items: center;
 	margin: 0 auto;
 	max-width: 1400px;
-	padding: 20px 50px;
+	padding: 20px 20px;
 	height: 120px;
 }
 
 h1 {
 	font-weight: bold;
 	margin-bottom: 10px;
+	font-size: 1.8rem;
+}
+
+.logo:hover {
+	color: white;
+	transform: scale(1);
 }
 
 .navLinks {
 	display: flex;
 	list-style: none;
 	align-items: center;
+	font-size: 16px;
 }
 
 .navLinks li {
-	margin-left: 25px;
+	padding-left: 15px;
 }
 
 a {
@@ -75,14 +82,24 @@ a {
 
 /* Responsywność */
 
-@media screen and (max-width: 950px) {
+@media (max-width: 992px) {
 	h1 {
-		font-size: 2rem;
+		font-size: 1.6rem;
+	}
+	.navLinks li a {
+		font-size: 14px;
+	}
+
+	.CVButton a {
+		padding: 5px 10px;
+		border-radius: 20px;
+
+		font-weight: 600;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	h1 {
+	.navbarContainer h1 {
 		font-size: 1.8rem;
 		margin-right: 40px;
 	}
@@ -127,6 +144,19 @@ a {
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.navbarContainer h1 {
+		font-size: 1.4rem;
+	}
+	.navbarContainer .logo {
+		white-space: wrap;
+	}
+	.navLinks {
+		top: 120px;
+	}
+}
+
 @keyframes slideDown {
 	from {
 		max-height: 0;
@@ -135,14 +165,5 @@ a {
 	to {
 		max-height: 500px;
 		opacity: 1;
-	}
-}
-
-@media screen and (max-width: 382px) {
-	h1 {
-		font-size: 22px;
-	}
-	.navLinks {
-		top: 120px;
 	}
 }

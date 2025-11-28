@@ -10,7 +10,7 @@ function Navbar() {
 	return (
 		<nav className={NavbarCss.navbar}>
 			<div className={NavbarCss.navbarContainer}>
-				<a href='top'>
+				<a href='top' className={NavbarCss.logo}>
 					<h1>Sylwester Szwarczyński</h1>
 				</a>
 				<ul className={`${NavbarCss.navLinks} ${isOpen ? NavbarCss.active : ''}`}>

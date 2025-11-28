@@ -5,6 +5,7 @@
 	background-image: url('../assets/ProjectsBackground2.png');
 	background-size: 100% 100%;
 	font-family: 'Poppins';
+	width: 100%;
 }
 
 .projectCards {
@@ -49,7 +50,7 @@
 
 .projectCard:hover {
 	transform: translateY(20px);
-	transform: scale(1.2);
+	transform: scale(1.1);
 	box-shadow: 0 14px 30px #7247ff57;
 	border-color: #7247ffd8;
 	z-index: 2;
