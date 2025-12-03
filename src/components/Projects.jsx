@@ -1,8 +1,8 @@
 import ProjectCard from './ProjectCard'
-import ss1 from '../assets/ss1.jpg'
-import ss2 from '../assets/ss2.png'
-import ss3 from '../assets/ss3.png'
-import ss4 from '../assets/ss4.png'
+import ss1 from '../assets/ss1.webp'
+import ss2 from '../assets/ss2.webp'
+import ss3 from '../assets/ss3.webp'
+import ss4 from '../assets/ss4.webp'
 import ProjectsCss from '../styles/Projects.module.css'
 
 function Projects() {

@@ -1,4 +1,4 @@
-import ProfilePhoto from '../assets/ProfilePhoto.png'
+import ProfilePhoto from '../assets/ProfilePhoto.webp'
 import AboutCss from '../styles/About.module.css'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
