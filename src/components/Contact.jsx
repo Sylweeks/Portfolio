@@ -1,10 +1,12 @@
 import ContactCss from '../styles/Contact.module.css'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa6'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import emailjs from '@emailjs/browser'
-import ReCAPTCHA from 'react-google-recaptcha'
+// import ReCAPTCHA from 'react-google-recaptcha'
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+const ReCAPTCHA = lazy(() => import('react-google-recaptcha'))
 
 export default function Contact() {
 	const [formData, setFormData] = useState({
@@ -86,12 +88,12 @@ export default function Contact() {
 							onChange={handleChange}
 							required
 							minLength={5}></textarea>
-
-						<ReCAPTCHA
-							sitekey='6LduFhUsAAAAAFc-iR1rMZIwpLu2b5jabT9zIz9d' // Site Key
-							onChange={value => setCaptchaValue(value)}
-						/>
-
+						<Suspense fallback={<div>Ładowanie weryfikacji…</div>}>
+							<ReCAPTCHA
+								sitekey='6LduFhUsAAAAAFc-iR1rMZIwpLu2b5jabT9zIz9d' // Site Key
+								onChange={value => setCaptchaValue(value)}
+							/>
+						</Suspense>
 						<button type='submit' disabled={isSending}>
 							{isSending ? 'Wysyłanie...' : 'Wyślij'}
 						</button>
