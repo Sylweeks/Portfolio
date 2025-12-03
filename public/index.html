@@ -13,116 +13,24 @@
 
   <title>Portfolio - Sylwester Szwarczyński</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
 
-  <style>
-    .hero {
-      background: url('../assets/HeroBackgroundLarge.jpg') no-repeat center center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100vh;
-      color: #fff;
-      text-align: center;
-      position: relative;
-      font-family: 'Poppins';
-    }
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-    .heroShadow {
-      position: absolute;
-      width: 100%;
-      height: 100vh;
-      z-index: 0;
-      background: #082416cd;
-      background: linear-gradient(0deg, rgba(8, 36, 22, 0.91) 29%, rgba(8, 36, 22, 0.6) 80%, rgba(8, 36, 22, 0.35) 100%);
-    }
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap"
+      rel="stylesheet">
+  </noscript>
 
-    .heroContent {
-      max-width: 700px;
-      padding: 0 20px;
-      z-index: 1;
-    }
 
-    .heroIntro {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
 
-    .heroName {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    .heroRole {
-      font-size: 2.2rem;
-      color: #7c6fff;
-      /* fioletowy */
-      margin-bottom: 1rem;
-    }
-
-    .heroDescription {
-      font-size: 1rem;
-      margin-bottom: 2rem;
-      line-height: 1.5;
-    }
-
-    .heroButtons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .btn {
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 9999px;
-      cursor: pointer;
-      border: none;
-      transition: all 0.3s ease;
-    }
-
-    .btnPrimary {
-      background-color: #603fb9;
-      color: white;
-    }
-
-    .btnPrimary:hover {
-      background-color: #655fd3;
-      border: 1px solid;
-    }
-
-    .btnSecondary {
-      background-color: rgba(255, 255, 255, 0.2);
-      color: white;
-      -webkit-box-shadow: 0px 0px 11px 1px white;
-      -moz-box-shadow: 0px 0px 11px 1px white;
-      box-shadow: 0px 0px 3px 0px white;
-    }
-
-    .btnSecondary:hover {
-      background-color: rgba(255, 255, 255, 0.4);
-    }
-
-    a:hover {
-      transition: all 0.3s ease;
-    }
-
-    @media screen and (max-width: 768px) {
-      .heroName {
-        font-size: 2.5rem;
-      }
-
-      .heroRole {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
 
 
   <link rel="preload" href="/static/css/main.css" as="style" />
