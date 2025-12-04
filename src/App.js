@@ -1,10 +1,16 @@
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { lazy } from 'react'
+// import About from './components/About'
+// import Projects from './components/Projects'
+// import Contact from './components/Contact'
+// import Footer from './components/Footer'
+
+const Skills = lazy(() => import('./components/Skills'))
+const About = lazy(() => import('./components/About'))
+const Projects = lazy(() => import('./components/Projects'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
 	return (
