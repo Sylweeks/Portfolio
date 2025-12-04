@@ -8,7 +8,7 @@ function Hero() {
 				src='/HeroBackgroundLarge.webp'
 				alt='Hero background'
 				className='Hero_background'
-				fetchPriority='high'
+				fetchpriority='high'
 				loading='eager'
 			/>
 			<div className={HeroCss.heroShadow}></div>
